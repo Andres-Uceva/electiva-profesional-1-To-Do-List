@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/widgets.dart';
 import 'package:uuid/uuid.dart';
 import '../../domain/entities/task.dart';
-import 'package:to_do_list_app/domain/entities/repositories/task_repository.dart';
+import 'package:to_do_list_app/domain/repositories/task_repository.dart';
 import '../../core/utils/connectivity_helper.dart';
 import '../../core/exceptions/api_exception.dart';
 import '../local/database/task_local_data_source.dart';
