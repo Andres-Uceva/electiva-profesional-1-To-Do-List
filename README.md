@@ -122,7 +122,7 @@ lib/
 ### Clonar el repositorio
 ```bash
 git clone <url-del-repositorio>
-cd todo-list-flutter
+cd electiva-profesional-1-To-Do-List
 ```
 
 ### Instalar dependencias de Flutter
@@ -130,7 +130,7 @@ cd todo-list-flutter
 flutter pub get
 ```
 
-## 🌐 Configuración del Mock API
+## Configuración del Mock API
 
 ### 1. Instalar json-server
 ```bash
@@ -246,7 +246,7 @@ flutter run -d <device-id>
 2. Fuerza la sincronización de operaciones pendientes
 3. Verás un mensaje: "Sincronización completada"
 
-## 📦 Generar APK
+## Generar APK
 
 ### APK de Release
 ```bash
@@ -272,7 +272,7 @@ Esto genera APKs separados para cada arquitectura:
 - `app-arm64-v8a-release.apk` (ARM 64-bit)
 - `app-x86_64-release.apk` (x86 64-bit)
 
-## 🔄 Estrategia de Sincronización
+## Estrategia de Sincronización
 
 ### Operaciones
 
@@ -285,3 +285,8 @@ Esto genera APKs separados para cada arquitectura:
 - Máximo **5 intentos** por operación
 - Se registra el `attempt_count` y `last_error`
 - Backoff exponencial entre reintentos
+
+### Resolución de Conflictos
+
+- **Last-Write-Wins (LWW)**: Se compara `updatedAt`
+- La versión más reciente prevalece
